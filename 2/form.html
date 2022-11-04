@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> JS form validation </title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <h1 style="text-align: center" id="title"> Enter data </h1>
+
+<style>
+    
+.container{
+    text-align: left;
+    padding: 5%;
+    background-color: rgb(216, 207, 195);
+}
+</style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+            <form name="myForm" id="form" action="">
+                <div class="form-group">
+                  <label for="firstName"> First name: </label>
+                  <input type="text" class="form-control" id="firstName">
+                  <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName"> Last name: </label>
+                    <input type="text" class="form-control" id="lastName">
+                    <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthYear"> Birth year: </label>
+                    <input type="number" class="form-control" id="birthYear">
+                    <small></small>
+                </div>
+  
+                <div class="form-group">
+                  <label for="gender"> Please select one of the options below: </label>
+                  <select class="form-control" id="gender">
+                    <option> Female </option>
+                    <option> Male </option>
+                    <option> Don't want to say </option>
+                  </select>
+                  <small></small>
+                </div>
+
+                <div class="form-group">
+                  <label for="adress"> Adress: </label>
+                  <textarea class="form-control" id="adress" rows="3"></textarea>
+                  <small></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="city"> City: </label>
+                    <input type="text" class="form-control" id="city">
+                    <small></small>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check"> I consent to sending my data. </label>
+                    <small></small>
+                </div>
+
+                <button input type="submit" class="btn btn-primary" id="btn"> Submit </button>
+
+            </form>
+            <p id="status"></p>
+            <div id="sentData"></div>
+
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+
+</html>
